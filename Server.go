@@ -2,14 +2,12 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"net"
 	"strconv"
 	"strings"
 )
 
 func main() {
-	fmt.Println("connecting...")
 	ln, _ := net.Listen("tcp", ":8080")
 	con, _ := ln.Accept()
 	for {
